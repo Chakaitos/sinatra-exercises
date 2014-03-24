@@ -4,6 +4,6 @@ require 'pry'
 
 set :bind, '0.0.0.0' # for Vagrant
 
-get '/welcome' do
+get '/welcome/:name' do
   erb :welcome
 end
