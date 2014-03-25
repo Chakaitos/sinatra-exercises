@@ -20,5 +20,13 @@ post '/test' do
   erb :test_summary
 end
 
+get '/dog-registration' do
+  erb :dog_registration
+end
 
-
+get '/dog-registration-results' do
+	@name = params[:name]
+  @breed = params[:breed]
+  @age = params[:age]
+  erb :dog_registration_results
+end
